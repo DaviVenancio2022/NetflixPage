@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
+        <audio src="audio/tudum-netflix-sound.mp3" class="audio"></audio>
         <ul>
             <li>
                 <img src="img/logo.png" class="img-cabecalho" alt="" />
@@ -24,15 +25,15 @@
         <div class="capa">
             <h1 class="capa-titulo">Stranger Things</h1>
             <p class="capa-descricao">
-                Stranger Things é uma serie de ficcao cientifica criada pelos irmaos Duffer para a Netflix.
-                Situada na cidade ficcional de Hawkins, Indiana, a trama comeca no ano de 1983 com o
-                desaparecimento do garoto Will.
+                Stranger Things é uma serie de ficcao cientifica criada pelos irmaos Duffer para a
+                Netflix. Situada na cidade ficcional de Hawkins, Indiana, a trama comeca no ano de
+                1983 com o desaparecimento do garoto Will.
             </p>
             <a class="link-assistir">Assistir</a>
             <a class="link-info">Mais Informacoes</a>
         </div>
-        <video src="video/stranger-things.mp4" autoplay muted loop></video>
-
+        <video src="video/stranger-things.mp4" autoplay muted loop class="video"></video>
+        <button class="botao-som">🔇</button>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <h2 class="titulo-carrossel">Principais Filmes e Séries</h2>
             <div class="carousel-inner">
@@ -51,16 +52,39 @@
                     />
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a
+                class="carousel-control-prev"
+                href="#carouselExampleControls"
+                role="button"
+                data-slide="prev"
+            >
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Anterior</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <a
+                class="carousel-control-next"
+                href="#carouselExampleControls"
+                role="button"
+                data-slide="next"
+            >
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Próximo</span>
             </a>
         </div>
-
+        <div class="modal">
+            <div class="modal-conteudo">
+                <h2>Stranger Things</h2>
+                <p>
+                    Stranger Things é uma serie de ficcao cientifica criada pelos irmaos Duffer para
+                    a Netflix. Situada na cidade ficcional de Hawkins, Indiana, a trama comeca no
+                    ano de 1983 com o desaparecimento do garoto Will.
+                </p>
+                <p>
+                    Genero: <strong>Ficção científica, Terror, Suspense e Drama adolescente</strong>
+                </p>
+                <p>Ano de Lancamento: <strong>2016</strong></p>
+            </div>
+        </div>
         <script
             src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -76,5 +100,6 @@
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
             crossorigin="anonymous"
         ></script>
+        <script src="scripts.js"></script>
     </body>
 </html>
